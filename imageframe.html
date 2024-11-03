@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameOfDreams</title>
+    <link rel="stylesheet" href="D:\image_gallery\image.css">
+
+</head>
+<body>
+    <h1>FRAMES OF IMAGES</h1>
+    <div class="fullimage" id="fullimgbox">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoG87iD9UZL2wYcglg4eSF6jz67TsKU879Ig&s" alt="1 " id="fullImg">
+        <span onclick="closeimage()">X</span>
+    </div>
+    <div class="image-gallery">
+        <img src="https://techrifle.com/wp-content/uploads/2023/12/Spider-Man-Across-the-Spider-Verse-Live-Wallpaper.webp" alt="1" onclick="openimage(this.src)">
+        <img src="https://m.media-amazon.com/images/I/61ABwjkntiL.jpg" alt="2" onclick="openimage(this.src)">
+        <img src="https://images3.alphacoders.com/214/214927.jpg" alt="3" onclick="openimage(this.src)">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/kgsb1jk0-0/poster/n/h/y/medium-twfnp2-beautiful-waterfall-nature-view-large-size-high-original-imafwy37qv2b5g3v.jpeg?q=20&crop=false" alt="4" onclick="openimage(this.src)">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/a/i/x/large-the-creative-solution-beautiful-sun-window-wallpaper-with-original-imaghvr8e8gngw79.jpeg?q=20&crop=false" alt="5" onclick="openimage(this.src)">
+        <img src="https://wallpapers.com/images/featured/business-jzw8ax93flqonkce.jpg" alt="6" onclick="openimage(this.src)">
+        <img src="https://m.media-amazon.com/images/I/71cBzqUoMkL._AC_UF1000,1000_QL80_.jpg" alt="7" onclick="openimage(this.src)">
+       <img src="https://wallpaper.forfun.com/fetch/07/07ac693306f53047f5ccc7f0157e6daa.jpeg" alt="8" onclick="openimage(this.src)">
+    </div>
+
+    <script>
+        var fullimgbox=document.getElementById("fullimgbox");
+        var fullImg=document.getElementById("fullImg");
+         
+        function openimage(pic){
+            fullimgbox.style.display = "flex";
+            fullImg.src=pic;
+
+        }
+        function closeimage(){
+            fullimgbox.style.display="none";
+        }
+    </script>
+</body>
+</html>
